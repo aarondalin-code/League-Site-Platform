@@ -17,6 +17,13 @@ DATA_DIR = Path("data/csv")
 OUTPUT_FILE = Path("data/derived/csv-file-summary.json")
 
 
+def get_headers(file_path):
+    with file_path.open(newline="", encoding="utf-8-sig") as handle:
+        reader = csv.reader(handle)
+        header_row = next(reader, [])
+        return [cell.strip() for cell in header_row]
+
+
 def count_data_rows(file_path):
     with file_path.open(newline="", encoding="utf-8-sig") as handle:
         reader = csv.reader(handle)
@@ -31,6 +38,7 @@ def main():
     found_files = []
     missing_files = []
     row_counts = {}
+    headers = {}
 
     for file_name in EXPECTED_FILES:
         file_path = DATA_DIR / file_name
@@ -38,6 +46,7 @@ def main():
             print(f"FOUND: {file_name}")
             found_files.append(file_name)
             row_counts[file_name] = count_data_rows(file_path)
+            headers[file_name] = get_headers(file_path)
         else:
             print(f"MISSING: {file_name}")
             missing_files.append(file_name)
@@ -49,6 +58,7 @@ def main():
         "foundFiles": found_files,
         "missingFiles": missing_files,
         "rowCounts": row_counts,
+        "headers": headers,
     }
 
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
