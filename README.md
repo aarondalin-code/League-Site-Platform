@@ -1,3 +1,5 @@
+
+
 # League-Site-Platform
 
 This repository contains the first data files for the league site platform.
@@ -22,4 +24,5 @@ The 8 CSV files are stored in:
 ## Current scaffold progress
 
 - CSV files have been organized into `data/csv/`
+- `START-HERE.md` has been added
 - More scaffold files will be added step by step
