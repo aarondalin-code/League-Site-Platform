@@ -1,0 +1,17 @@
+ContentID,Type,MonthDay,StartDate,EndDate,Year,Category,Title,Body,TrailerURL,Link,Name,Speaker,PrimaryTeam,Years,Fact1,Fact2,Stat1,Stat2,SortOrder,Active
+C-01,history,03-01,03/01/2026,03/01/2026,1995,,Baseball Is Back,Players returned to spring training and fans were excited to have baseball again.,,,,,,,,,,,,TRUE
+C-02,quote,,,,,,,Never let the fear of striking out keep you from playing the game.,,,,Babe Ruth,,,,,,,,TRUE
+C-03,movie,,,,1993,Classic,The Sandlot,A group of kids spend their summer playing baseball and chasing legends.,https://www.youtube.com/watch?v=lbKR2nEFf8k,,,,,,,,,,,TRUE
+C-04,birthday,01-01,,,1911,,,,,,,,,,Hall of Fame slugger who won two MVP awards and starred for the Tigers.,,,,,TRUE
+C-05,hall_of_fame,,,,,,,,,,Addie Joss,,Indians,1902-1910,Was elected despite a short career because of how dominant he was.,Threw a perfect game in 1908.,160 career wins,1.89 career ERA,,TRUE
+C-06,fact,,,,,,,,,,,,,,,,,,,TRUE
+C-07,announcement,,,,,,,,,,,,,,,,,,,TRUE
+C-08,key_date,,04/18/2026,,,,WBL Parade and Carnival,Parade begins at X.  Tickets cost $,,,,,,,,,,,,TRUE
+C-09,key_date,,06/21/2026,,,,Yankess vs Reds 1:30pm.  Buy Tickets Here.,,,http://www.gofevo.com/event/Westfieldbaseball2,,,,,,,,,,TRUE
+C-10,,,,,,,,,,,,,,,,,,,,TRUE
+C-11,,,,,,,,,,,,,,,,,,,,TRUE
+C-12,,,,,,,,,,,,,,,,,,,,TRUE
+C-13,,,,,,,,,,,,,,,,,,,,TRUE
+C-14,,,,,,,,,,,,,,,,,,,,TRUE
+C-15,,,,,,,,,,,,,,,,,,,,TRUE
+C-16,,,,,,,,,,,,,,,,,,,,

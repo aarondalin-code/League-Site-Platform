@@ -1,0 +1,3 @@
+PracticeID,TeamID,Date,DayLabel,Time,Field,Active,Notes
+P-01,T-01,4/10/26,Friday,6:00 PM,T3,TRUE,
+P-02,T-02,04/09/26,Thursday,5:00 PM,T5,TRUE,

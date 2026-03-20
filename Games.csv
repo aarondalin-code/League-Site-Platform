@@ -1,0 +1,2 @@
+GameID,Date,Time,Field,TeamAID,TeamBID,ScoreA,ScoreB,Status,GameType,Week,Notes,Active
+G-01,4/11/2026,9:00 AM,1,T-01,T-02,3,2,scheduled,regular,1,,TRUE
