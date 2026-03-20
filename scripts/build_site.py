@@ -12,8 +12,16 @@ def safe(value, fallback=""):
 def render_html(page_title, site_config, body_html):
     primary_color = safe(site_config.get("PrimaryColor"), "#0052cc")
     secondary_color = safe(site_config.get("SecondaryColor"), "#ffa500")
+    text_color = safe(site_config.get("TextColor"), "#222")
     logo_url = safe(site_config.get("LogoURL"))
     site_title = safe(site_config.get("SiteTitle"), site_config.get("LeagueName", "League Site"))
+    header_text = safe(site_config.get("HeaderText"), site_title)
+    tagline = safe(site_config.get("Tagline"))
+    bg_image = safe(site_config.get("BackgroundImageURL"))
+
+    background_style = ""
+    if bg_image:
+        background_style = f"background-image: url('{bg_image}'); background-size: cover; background-position: center;"
 
     return f"""<!doctype html>
 <html lang="en">
@@ -22,8 +30,8 @@ def render_html(page_title, site_config, body_html):
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{page_title}</title>
   <style>
-    :root {{ --primary: {primary_color}; --secondary: {secondary_color}; }}
-    body {{ margin: 0; font-family: Arial, Helvetica, sans-serif; background: #f8f9fb; color: #222; }}
+    :root {{ --primary: {primary_color}; --secondary: {secondary_color}; --text: {text_color}; }}
+    body {{ margin: 0; font-family: Arial, Helvetica, sans-serif; background: #f8f9fb; color: var(--text); {background_style} }}
     .topbar {{ background: var(--primary); color: white; padding: 10px 16px; display: flex; align-items: center; gap: 12px; }}
     .topbar img {{ max-height: 40px; border-radius: 6px; }}
     .nav {{ background: #ffffff; border-bottom: 1px solid #dbe0e9; padding: 8px 16px; }}
@@ -38,7 +46,8 @@ def render_html(page_title, site_config, body_html):
   <header class="topbar">
     {f'<img src="{logo_url}" alt="Logo" />' if logo_url else ''}
     <div>
-      <div style="font-size: 1.25rem; font-weight: 700;">{site_title}</div>
+      <div style="font-size: 1.25rem; font-weight: 700;">{header_text}</div>
+      <div style="font-size: .9rem;">{tagline}</div>
       <div style="font-size: .9rem;">{safe(site_config.get('LeagueName'))} - {safe(site_config.get('SeasonLabel'))}</div>
     </div>
   </header>
