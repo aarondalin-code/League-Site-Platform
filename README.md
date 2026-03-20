@@ -27,6 +27,16 @@ The data files are in `data/csv/` and the platform can generate a preview websit
    - `http://localhost:8000`
 3. Stop server with Ctrl+C
 
+## Browser-only preview (no terminal)
+
+After code is merged to `main`, GitHub Actions publishes a preview site.
+
+1. Open repository settings in GitHub.
+2. Go to Pages.
+3. Under Build and deployment, set Source to GitHub Actions.
+4. After the Deploy Site Preview workflow completes, open:
+   - `https://aarondalin-code.github.io/League-Site-Platform/`
+
 ## Custom league branding
 
 In `data/csv/SiteConfig.csv`, edit:
