@@ -1,1 +1,2 @@
 LeagueID,LeagueName,SeasonLabel,DivisionLabel,SiteTitle,PrimaryColor,SecondaryColor,LogoURL,WatermarkURL,AnalyticsID,UploadsFormURL,EnableStandings,EnableGallery,EnableTrivia,EnableRSVP
+L001,Westfield Baseball League,Spring 2026,Majors,WBBaseball.com,#0052cc,#FFA500,, ,UA-XXXXX,https://example.com/upload,TRUE,TRUE,TRUE,TRUE
