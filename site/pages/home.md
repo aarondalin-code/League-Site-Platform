@@ -1,14 +1,19 @@
-# Home page stub
+# WBBaseball.com
 
-## Purpose
-Show the first version of the league site home page.
+## Westfield Baseball League - Spring 2026
 
-## Main data sources
-- SiteConfig.csv
-- Content.csv
+Welcome to the league!
 
-## First version should show
-- site name
-- season info
-- welcome text
-- quick links to Teams, Players, and Schedule
+### Quick Links
+
+- [Teams](teams.md)
+- [Players](players.md)
+- [Schedule](schedule.md)
+
+### Featured Content
+
+- **Baseball Is Back**: Players returned to spring training and fans were excited to have baseball again.
+- **quote**: Never let the fear of striking out keep you from playing the game.
+- **The Sandlot**: A group of kids spend their summer playing baseball and chasing legends.
+- **birthday**: 
+- **hall_of_fame**: 
